@@ -31,4 +31,4 @@ Thank you for being interested in making this package better. I encourage everyo
 
 <h2>License</h2>
 
-
+MIT
