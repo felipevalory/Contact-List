@@ -25,6 +25,7 @@
   --transition-slow: 1s;
   --default-border-radius: 4px;
 }
+
 *,
 *::before,
 *::after {
@@ -32,9 +33,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
 }
+
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -44,11 +47,13 @@ body {
   -webkit-font-smoothing: antialiased;
   background: var(--clr-light-gray);
 }
+
 img,
 svg {
   display: block;
   max-width: 100%;
 }
+
 .header {
   background: var(--clr-black);
   padding: var(--spacing);
@@ -56,27 +61,33 @@ svg {
   z-index: 1;
   position: relative;
 }
+
 .header-heading {
   font-size: var(--biggest-font-size);
   text-align: center;
 }
+
 .header-link {
   color: var(--link-light-color);
   text-decoration: none;
   transition: filter var(--transition-fast) ease-in-out;
 }
+
 .header-link:hover {
   filter: brightness(70%);
 }
+
 .menu {
   margin: var(--spacing);
 }
+
 .menu-list {
   list-style: none;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
+
 .menu-link {
   display: block;
   padding: var(--spacing);
@@ -85,9 +96,11 @@ svg {
   transition: background-color var(--transition-fast) ease-in-out;
   border-radius: var(--default-border-radius);
 }
+
 .menu-link:hover {
   background: var(--clr-light-shadow-10);
 }
+
 .content {
   max-width: var(--main-page-width);
   margin: calc(var(--spacing) * 2) auto;
@@ -96,31 +109,38 @@ svg {
   box-shadow: 2px 2px 5px var(--clr-dark-shadow-20);
   border-radius: var(--default-border-radius);
 }
+
 .responsive-table {
   width: 100%;
   overflow-x: auto;
 }
+
 .contacts-table {
   width: 100%;
   min-width: var(--table-min-width);
   border-collapse: collapse;
 }
+
 .table-caption {
   font-size: var(--medium-font-size);
   font-weight: bold;
   padding: var(--spacing);
 }
+
 .table-row {
   text-align: left;
   text-overflow: ellipsis;
   transition: background-color var(--transition-fast) ease-in-out;
 }
+
 .table-row:nth-of-type(2n) {
   background: var(--clr-dark-shadow-5);
 }
+
 .table-row:not(.table-row-header):hover {
   background: var(--clr-dark-shadow-10);
 }
+
 .table-row-header {
   background: var(--clr-light-gray);
   color: var(--clr-black);
@@ -221,7 +241,7 @@ svg {
 
 .message.info {
   background: rgba(0, 0, 255, 0.3);
-  border: 1px solid rgba(0, 0, 255, 90%);
+  border: 1px solid rgba(0, 0, 255, 0.3);
 }
 
 .form-wrapper {
@@ -238,13 +258,11 @@ svg {
   flex-direction: column;
   padding-bottom: var(--spacing);
 }
-
 .errorlist {
   list-style: none;
   font-size: var(--smaller-font-size);
   color: tomato;
 }
-
 .errorlist.nonfield {
   color: inherit;
 }
